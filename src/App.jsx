@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Provider } from 'react-redux'
 import store from './store'
+import Contador from './components/Contador'
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     <Provider store ={store}>
       <div>
         <h1>REDUX toolkit</h1>
-    /*Contador*/
+    <Contador/>
       </div>
     </Provider>
   )

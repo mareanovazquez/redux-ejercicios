@@ -1,4 +1,5 @@
 import { act } from "react"
+import { DECREMENTAR, DECREMENTAR_5, INCREMENTAR, INCREMENTAR_5, RESET } from "../types"
 
 const initialState = {
     contador: 0
@@ -6,31 +7,31 @@ const initialState = {
 
 export default function contadorReducer(state = initialState, action) {
     switch (action.type) {
-        case 'INCREMENTAR':
+        case INCREMENTAR:
             return {
                 ...state,
                 contador: state.contador + 1
             }
-        case 'INCREMENTAR_5':
+        case INCREMENTAR_5:
             return {
                 ...state,
                 contador: state.contador + action.payload
             }
 
-        case 'DECREMENTAR': {
+        case DECREMENTAR: {
             return {
                 ...state,
                 contador: state.contador - 1
             }
         }
 
-        case 'DECREMENTAR_5': {
+        case DECREMENTAR_5: {
             return {
                 ...state,
                 contador: state.contador - action.payload
             }
         }
-        case 'RESET': {
+        case RESET : {
             return {
                 ...state,
                 contador: 0

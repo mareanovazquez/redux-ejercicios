@@ -1,0 +1,5 @@
+export const sumar = () => ({ type: 'INCREMENTAR' })
+export const sumar5 = () => ({ type: 'INCREMENTAR_5', payload: 5 })
+export const restar = () => ({ type: 'DECREMENTAR' })
+export const restar5 = () => ({ type: 'DECREMENTAR_5', payload:5 })
+export const reset = () => ({ type: 'RESET' })
